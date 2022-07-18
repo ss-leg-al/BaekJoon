@@ -13,6 +13,8 @@ def first(rank):
         return 300000
     elif 15<rank<22:
         return 100000
+    else:
+        return 0
 def second(rank):
     if rank==1:
         return 5120000
@@ -24,6 +26,8 @@ def second(rank):
         return 640000
     elif 15<rank<32:
         return 320000
+    else:
+        return 0
 for i in range(n):
     firstR,secondR=map(int,input().split())
     list.append(first(firstR)+second(secondR))
